@@ -66,7 +66,7 @@ const HeroSection = () => {
                     <div className="text-xl text-foreground font-semibold">mais faturamento</div>
                     <div className="h-px bg-gradient-to-r from-transparent via-[hsl(var(--ccd-cyan)/0.5)] to-transparent" />
                     <div className="text-4xl md:text-5xl font-bold text-[hsl(var(--ccd-cyan))]">
-                      R$ 3.192.750
+                      R$ 14.192.750
                     </div>
                     <div className="text-muted-foreground">gerados pelos membros em 2024</div>
                   </div>

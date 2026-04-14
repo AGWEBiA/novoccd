@@ -12,7 +12,7 @@ const testimonials = [
 
 const SocialProofSection = () => {
   const { ref, isVisible } = useScrollAnimation();
-  const revenue = useCountUp(3192750, 2500, 0, isVisible);
+  const revenue = useCountUp(14192750, 2500, 0, isVisible);
 
   return (
     <section ref={ref} className="relative py-24 md:py-32 bg-[hsl(0_0%_2%)]">
