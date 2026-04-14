@@ -34,7 +34,7 @@ const HeroSection = () => {
             </p>
 
             <p className="text-lg text-[hsl(var(--ccd-cyan))] font-semibold">
-              Descubra a ferramenta de aceleração que gerou mais de R$ 3 milhões em faturamento extra para nossos membros em apenas 12 meses.
+              Descubra a ferramenta de aceleração que gerou mais de R$ 14 milhões em faturamento extra para nossos membros em apenas 12 meses.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
