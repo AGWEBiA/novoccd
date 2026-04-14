@@ -181,11 +181,11 @@ html {
 /* Tech grid background */
 .bg-tech-grid {
   background-image:
+    linear-gradient(hsl(187 100% 50% / 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, hsl(187 100% 50% / 0.06) 1px, transparent 1px),
     linear-gradient(hsl(187 100% 50% / 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, hsl(187 100% 50% / 0.03) 1px, transparent 1px),
-    linear-gradient(hsl(187 100% 50% / 0.015) 1px, transparent 1px),
-    linear-gradient(90deg, hsl(187 100% 50% / 0.015) 1px, transparent 1px);
-  background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+    linear-gradient(90deg, hsl(187 100% 50% / 0.03) 1px, transparent 1px);
+  background-size: 120px 120px, 120px 120px, 30px 30px, 30px 30px;
 }
 
 .bg-tech-lines::before {
