@@ -1,8 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600&display=swap');
 
 @layer base {
   :root {
@@ -180,33 +180,35 @@ html {
 
 /* Tech grid background */
 .bg-tech-grid {
-  background-image:
-    linear-gradient(hsl(187 100% 50% / 0.12) 1px, transparent 1px),
-    linear-gradient(90deg, hsl(187 100% 50% / 0.12) 1px, transparent 1px),
-    linear-gradient(hsl(187 100% 50% / 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, hsl(187 100% 50% / 0.05) 1px, transparent 1px);
-  background-size: 120px 120px, 120px 120px, 30px 30px, 30px 30px;
+  position: relative;
 }
 
-.bg-tech-lines::before {
-  content: '';
+.bg-tech-grid > section {
+  position: relative;
+  isolation: isolate;
+}
+
+.bg-tech-grid > section::before {
+  content: "";
   position: absolute;
   inset: 0;
-  background:
-    repeating-linear-gradient(
-      90deg,
-      transparent,
-      transparent 60px,
-      hsl(187 100% 50% / 0.02) 60px,
-      hsl(187 100% 50% / 0.02) 61px
-    ),
-    repeating-linear-gradient(
-      0deg,
-      transparent,
-      transparent 60px,
-      hsl(187 100% 50% / 0.02) 60px,
-      hsl(187 100% 50% / 0.02) 61px
-    );
   pointer-events: none;
+  z-index: 1;
+  opacity: 1;
+  background-image:
+    linear-gradient(hsl(var(--ccd-cyan) / 0.24) 1px, transparent 1px),
+    linear-gradient(90deg, hsl(var(--ccd-cyan) / 0.24) 1px, transparent 1px),
+    linear-gradient(hsl(var(--ccd-cyan) / 0.12) 1px, transparent 1px),
+    linear-gradient(90deg, hsl(var(--ccd-cyan) / 0.12) 1px, transparent 1px);
+  background-size: 140px 140px, 140px 140px, 32px 32px, 32px 32px;
+  background-position: center;
+}
+
+.bg-tech-grid > section > .absolute {
   z-index: 0;
+}
+
+.bg-tech-grid > section > .container {
+  position: relative;
+  z-index: 2;
 }
