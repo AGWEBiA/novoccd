@@ -4,7 +4,7 @@ const OfferSection = () => {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
-    <section id="oferta" ref={ref} className="relative py-24 md:py-32 bg-gradient-dark">
+    <section id="oferta" ref={ref} className="relative py-14 md:py-20 bg-gradient-dark">
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full bg-[hsl(187_100%_50%/0.03)] blur-[150px]" />
       </div>
