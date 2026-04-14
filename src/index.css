@@ -180,33 +180,32 @@ html {
 
 /* Tech grid background */
 .bg-tech-grid {
-  background-image:
-    linear-gradient(hsl(187 100% 50% / 0.12) 1px, transparent 1px),
-    linear-gradient(90deg, hsl(187 100% 50% / 0.12) 1px, transparent 1px),
-    linear-gradient(hsl(187 100% 50% / 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, hsl(187 100% 50% / 0.05) 1px, transparent 1px);
-  background-size: 120px 120px, 120px 120px, 30px 30px, 30px 30px;
+  position: relative;
 }
 
-.bg-tech-lines::before {
-  content: '';
+.bg-tech-grid > section {
+  position: relative;
+  isolation: isolate;
+}
+
+.bg-tech-grid > section::before {
+  content: "";
   position: absolute;
   inset: 0;
-  background:
-    repeating-linear-gradient(
-      90deg,
-      transparent,
-      transparent 60px,
-      hsl(187 100% 50% / 0.02) 60px,
-      hsl(187 100% 50% / 0.02) 61px
-    ),
-    repeating-linear-gradient(
-      0deg,
-      transparent,
-      transparent 60px,
-      hsl(187 100% 50% / 0.02) 60px,
-      hsl(187 100% 50% / 0.02) 61px
-    );
   pointer-events: none;
   z-index: 0;
+  opacity: 0.9;
+  mix-blend-mode: screen;
+  background-image:
+    linear-gradient(hsl(var(--ccd-cyan) / 0.16) 1px, transparent 1px),
+    linear-gradient(90deg, hsl(var(--ccd-cyan) / 0.16) 1px, transparent 1px),
+    linear-gradient(hsl(var(--ccd-cyan) / 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, hsl(var(--ccd-cyan) / 0.07) 1px, transparent 1px);
+  background-size: 120px 120px, 120px 120px, 30px 30px, 30px 30px;
+  background-position: center;
+}
+
+.bg-tech-grid > section > * {
+  position: relative;
+  z-index: 1;
 }
