@@ -1,16 +1,31 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import HeroSection from "@/components/sections/HeroSection";
+import PainSection from "@/components/sections/PainSection";
+import ShiftSection from "@/components/sections/ShiftSection";
+import PillarsSection from "@/components/sections/PillarsSection";
+import SocialProofSection from "@/components/sections/SocialProofSection";
+import ValueStackSection from "@/components/sections/ValueStackSection";
+import PriceAnchorSection from "@/components/sections/PriceAnchorSection";
+import OfferSection from "@/components/sections/OfferSection";
+import BonusSection from "@/components/sections/BonusSection";
+import GuaranteeSection from "@/components/sections/GuaranteeSection";
+import FinalCTASection from "@/components/sections/FinalCTASection";
 
-// IMPORTANT: Fully REPLACE this with your own code
-const PlaceholderIndex = () => {
-  // PLACEHOLDER: Replace this entire return statement with the user's app.
-  // The inline background color is intentionally not part of the design system.
+const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center" style={{ backgroundColor: '#fcfbf8' }}>
-      <img data-lovable-blank-page-placeholder="REMOVE_THIS" src="/placeholder.svg" alt="Your app will live here!" />
-    </div>
+    <main className="overflow-hidden">
+      <HeroSection />
+      <PainSection />
+      <ShiftSection />
+      <PillarsSection />
+      <SocialProofSection />
+      <ValueStackSection />
+      <PriceAnchorSection />
+      <OfferSection />
+      <BonusSection />
+      <GuaranteeSection />
+      <FinalCTASection />
+    </main>
   );
 };
-
-const Index = PlaceholderIndex;
 
 export default Index;
