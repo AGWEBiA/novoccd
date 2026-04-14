@@ -5,7 +5,7 @@ const priceItems = [
   { label: "Consultoria de Processos", value: "R$ 3.000 a R$ 7.000" },
   { label: "Consultoria de Equipes", value: "R$ 4.000 a R$ 8.000" },
   { label: "Consultoria de Escala", value: "R$ 5.000 a R$ 10.000" },
-  { label: "Mentorias Individuais", value: "R$ 1.000 a R$ 3.000/sessão" },
+  
   { label: "Comunidade e Networking", value: "R$ 2.000 a R$ 5.000/ano" },
 ];
 
