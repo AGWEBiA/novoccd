@@ -63,7 +63,7 @@ const PillarsSection = () => {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
-    <section id="pilares" ref={ref} className="relative py-24 md:py-32 bg-gradient-dark">
+    <section id="pilares" ref={ref} className="relative py-14 md:py-20 bg-gradient-dark">
       <div className="container mx-auto px-6">
         <div className={`text-center max-w-3xl mx-auto mb-16 ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}>
           <span className="inline-block px-4 py-2 rounded-full border border-[hsl(var(--ccd-cyan)/0.3)] bg-[hsl(var(--ccd-cyan)/0.05)] text-[hsl(var(--ccd-cyan))] text-sm font-semibold tracking-widest uppercase mb-6">

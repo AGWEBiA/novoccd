@@ -5,7 +5,7 @@ const ShiftSection = () => {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
-    <section ref={ref} className="relative py-24 md:py-32 overflow-hidden">
+    <section ref={ref} className="relative py-14 md:py-20 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-dark" />
       <div className="absolute right-0 top-0 w-1/2 h-full bg-gradient-to-l from-[hsl(187_100%_50%/0.03)] to-transparent" />
 

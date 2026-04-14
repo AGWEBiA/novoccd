@@ -26,7 +26,7 @@ const BonusSection = () => {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
-    <section ref={ref} className="relative py-24 md:py-32 bg-[hsl(0_0%_2%)]">
+    <section ref={ref} className="relative py-14 md:py-20 bg-[hsl(0_0%_2%)]">
       <div className="container mx-auto px-6">
         <div className={`text-center mb-16 ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-black">

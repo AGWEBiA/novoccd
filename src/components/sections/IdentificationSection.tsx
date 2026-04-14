@@ -20,7 +20,7 @@ const IdentificationSection = () => {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
-    <section ref={ref} className="relative py-24 md:py-32 bg-gradient-dark">
+    <section ref={ref} className="relative py-14 md:py-20 bg-gradient-dark">
       <div className="container mx-auto px-6">
         <div className={`max-w-4xl mx-auto space-y-12 ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}>
           <div className="text-center space-y-6">

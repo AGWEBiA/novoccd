@@ -15,7 +15,7 @@ const SocialProofSection = () => {
   const revenue = useCountUp(14192750, 2500, 0, isVisible);
 
   return (
-    <section ref={ref} className="relative py-24 md:py-32 bg-[hsl(0_0%_2%)]">
+    <section ref={ref} className="relative py-14 md:py-20 bg-[hsl(0_0%_2%)]">
       <div className="container mx-auto px-6">
         <div className={`text-center mb-6 ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-black mb-4">

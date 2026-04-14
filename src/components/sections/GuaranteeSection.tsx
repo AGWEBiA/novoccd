@@ -5,7 +5,7 @@ const GuaranteeSection = () => {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
-    <section ref={ref} className="relative py-24 md:py-32 bg-gradient-dark">
+    <section ref={ref} className="relative py-14 md:py-20 bg-gradient-dark">
       <div className="container mx-auto px-6">
         <div className={`max-w-3xl mx-auto text-center space-y-8 ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}>
           <div className="w-24 h-24 rounded-full bg-[hsl(var(--ccd-cyan)/0.1)] border-2 border-[hsl(var(--ccd-cyan)/0.3)] flex items-center justify-center mx-auto animate-float">
