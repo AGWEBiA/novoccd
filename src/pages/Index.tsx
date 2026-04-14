@@ -12,6 +12,7 @@ import BonusSection from "@/components/sections/BonusSection";
 import GuaranteeSection from "@/components/sections/GuaranteeSection";
 import FAQSection from "@/components/sections/FAQSection";
 import FinalCTASection from "@/components/sections/FinalCTASection";
+import FooterSection from "@/components/sections/FooterSection";
 
 const Index = () => {
   return (
@@ -30,6 +31,7 @@ const Index = () => {
       <GuaranteeSection />
       <FAQSection />
       <FinalCTASection />
+      <FooterSection />
     </main>
   );
 };
