@@ -12,24 +12,31 @@ const ShiftSection = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className={`text-center max-w-4xl mx-auto space-y-8 ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}>
           <span className="inline-block px-4 py-2 rounded-full border border-[hsl(var(--ccd-cyan)/0.3)] bg-[hsl(var(--ccd-cyan)/0.05)] text-[hsl(var(--ccd-cyan))] text-sm font-semibold tracking-widest uppercase">
-            A VIRADA
+            A EPIFANIA
           </span>
 
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-black leading-tight">
             O Contador Que{" "}
             <span className="text-gradient-cyan">Fatura 12x Mais</span>
             <br />
-            Não Trabalha Mais Horas...
+            Não É Mais Inteligente. Ele Apenas{" "}
+            <span className="text-gradient-warm">Mudou o Jogo.</span>
           </h2>
 
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Ele trabalha <strong className="text-foreground">diferente</strong>. Parou de vender conformidade
-            e começou a vender <span className="text-[hsl(var(--ccd-cyan))] font-semibold">resultado</span>.
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            Os empresários nunca estiveram tão perdidos. Eles têm números, mas não entendem o que significam. Eles precisam de um{" "}
+            <strong className="text-foreground">CFO terceirizado</strong>. Um{" "}
+            <span className="text-[hsl(var(--ccd-cyan))] font-semibold">Consultor Estratégico</span>. Um{" "}
+            <span className="text-gradient-warm font-semibold">Arquiteto de Negócios</span>.
+          </p>
+
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            E sabe qual é a melhor parte? Eles pagam <strong className="text-foreground">muito mais</strong> por isso do que pagam por conformidade. Os contadores que entenderam isso deixaram de vender "darf e holerite" e começaram a vender{" "}
+            <span className="text-[hsl(var(--ccd-cyan))] font-semibold">previsibilidade, segurança e crescimento</span>.
           </p>
         </div>
 
         <div className={`mt-16 grid md:grid-cols-2 gap-8 max-w-5xl mx-auto ${isVisible ? "animate-fade-in-up stagger-3" : "opacity-0"}`}>
-          {/* Before */}
           <div className="bg-gradient-card rounded-3xl p-8 border border-[hsl(var(--ccd-red)/0.2)] relative">
             <div className="absolute top-4 right-4 px-3 py-1 rounded-full bg-[hsl(var(--ccd-red)/0.1)] text-[hsl(var(--ccd-red))] text-xs font-bold uppercase">Antes</div>
             <div className="space-y-4 text-muted-foreground">
@@ -41,7 +48,6 @@ const ShiftSection = () => {
             </div>
           </div>
 
-          {/* After */}
           <div className="bg-gradient-card rounded-3xl p-8 border border-[hsl(var(--ccd-cyan)/0.3)] glow-cyan relative">
             <div className="absolute top-4 right-4 px-3 py-1 rounded-full bg-[hsl(var(--ccd-cyan)/0.1)] text-[hsl(var(--ccd-cyan))] text-xs font-bold uppercase">Depois</div>
             <div className="space-y-4 text-muted-foreground">
@@ -55,6 +61,9 @@ const ShiftSection = () => {
         </div>
 
         <div className={`mt-12 text-center ${isVisible ? "animate-fade-in-up stagger-4" : "opacity-0"}`}>
+          <p className="text-xl font-bold text-[hsl(var(--ccd-cyan))] mb-4">
+            Você pode fazer exatamente o mesmo. Começando hoje.
+          </p>
           <a href="#pilares" className="inline-flex items-center gap-2 text-[hsl(var(--ccd-cyan))] font-semibold text-lg hover:gap-4 transition-all">
             Descubra como <ArrowRight className="w-5 h-5" />
           </a>

@@ -1,24 +1,24 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { Gift, Clock, Zap } from "lucide-react";
+import { Search, FileText, MessageSquare } from "lucide-react";
 
 const bonuses = [
   {
-    icon: Gift,
-    title: "Kit Captação de Clientes Premium",
-    desc: "Templates de propostas, scripts de vendas e funis de captação prontos para usar.",
+    icon: Search,
+    title: "Análise de Perfil Contábil",
+    desc: "Uma análise completa do seu escritório para identificar exatamente onde você está deixando dinheiro na mesa e qual é o seu maior ponto de alavancagem.",
     value: "R$ 1.500",
   },
   {
-    icon: Zap,
-    title: "Masterclass: IA Para Contadores",
-    desc: "Como usar inteligência artificial para automatizar processos e entregar mais valor.",
+    icon: FileText,
+    title: "Masterclass: Os 5 Scripts de Vendas Que Convertem",
+    desc: "Os 5 scripts que nossos membros usam para fechar clientes High Ticket. Prontos para usar. Prontos para copiar.",
     value: "R$ 2.000",
   },
   {
-    icon: Clock,
-    title: "Sessão Estratégica Individual",
-    desc: "1 hora com Anderson Maisse para montar seu plano de ação personalizado.",
-    value: "R$ 3.000",
+    icon: MessageSquare,
+    title: "Acesso ao Grupo VIP de WhatsApp",
+    desc: "Acesso ao grupo exclusivo onde os contadores mais avançados trocam estratégias e resolvem problemas em tempo real.",
+    value: "R$ 1.000",
   },
 ];
 
@@ -31,9 +31,11 @@ const BonusSection = () => {
         <div className={`text-center mb-16 ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-black">
             Mas Espera...{" "}
-            <span className="text-gradient-cyan">Tem Mais</span>
+            <span className="text-gradient-cyan">Tem Mais.</span>
           </h2>
-          <p className="text-xl text-muted-foreground mt-4">Bônus exclusivos para quem entrar agora</p>
+          <p className="text-xl text-muted-foreground mt-4 max-w-2xl mx-auto">
+            Para quem entrar AGORA, você recebe 3 bônus exclusivos que desaparecem assim que a oferta fecha:
+          </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
@@ -53,6 +55,15 @@ const BonusSection = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        <div className={`text-center mt-10 ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}>
+          <div className="inline-block px-6 py-3 rounded-full border border-[hsl(var(--ccd-orange)/0.3)] bg-[hsl(var(--ccd-orange)/0.05)]">
+            <span className="text-[hsl(var(--ccd-orange))] font-bold text-xl">Total em Bônus: R$ 4.500</span>
+          </div>
+          <p className="text-muted-foreground mt-4 text-sm">
+            Esses bônus desaparecem assim que a oferta fecha. Essa oportunidade é limitada.
+          </p>
         </div>
       </div>
     </section>
