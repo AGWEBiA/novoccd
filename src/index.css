@@ -196,12 +196,26 @@ html {
   z-index: 1;
   opacity: 1;
   background-image:
-    linear-gradient(hsl(var(--ccd-cyan) / 0.24) 1px, transparent 1px),
-    linear-gradient(90deg, hsl(var(--ccd-cyan) / 0.24) 1px, transparent 1px),
-    linear-gradient(hsl(var(--ccd-cyan) / 0.12) 1px, transparent 1px),
-    linear-gradient(90deg, hsl(var(--ccd-cyan) / 0.12) 1px, transparent 1px);
+    linear-gradient(hsl(var(--ccd-cyan) / 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, hsl(var(--ccd-cyan) / 0.08) 1px, transparent 1px),
+    linear-gradient(hsl(var(--ccd-cyan) / 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, hsl(var(--ccd-cyan) / 0.04) 1px, transparent 1px);
   background-size: 140px 140px, 140px 140px, 32px 32px, 32px 32px;
   background-position: center;
+}
+
+/* Radial glow on corners */
+.bg-tech-grid > section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  background:
+    radial-gradient(ellipse 600px 400px at 0% 0%, hsl(var(--ccd-cyan) / 0.07), transparent 70%),
+    radial-gradient(ellipse 600px 400px at 100% 0%, hsl(var(--ccd-purple) / 0.05), transparent 70%),
+    radial-gradient(ellipse 600px 400px at 0% 100%, hsl(var(--ccd-purple) / 0.05), transparent 70%),
+    radial-gradient(ellipse 600px 400px at 100% 100%, hsl(var(--ccd-cyan) / 0.07), transparent 70%);
 }
 
 .bg-tech-grid > section > .absolute {
