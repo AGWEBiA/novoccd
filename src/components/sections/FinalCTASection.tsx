@@ -4,7 +4,7 @@ const FinalCTASection = () => {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
-    <section ref={ref} className="relative py-24 md:py-32 bg-[hsl(0_0%_2%)] overflow-hidden">
+    <section ref={ref} className="relative py-24 md:py-32 bg-gradient-dark overflow-hidden">
       <div className="absolute inset-0">
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[1000px] h-[400px] bg-[hsl(187_100%_50%/0.05)] blur-[150px] rounded-full" />
       </div>
@@ -17,32 +17,48 @@ const FinalCTASection = () => {
             <span className="text-gradient-cyan">E É Agora.</span>
           </h2>
 
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            Você pode fechar essa página e voltar para a sua rotina de 14 horas de trabalho, brigando por preço, perdendo clientes para quem cobra mais barato...
+          </p>
+
+          <p className="text-xl text-foreground font-semibold max-w-3xl mx-auto">
+            Ou você pode clicar no botão abaixo, entrar para a Comunidade de Contadores Digitais e se tornar o{" "}
+            <span className="text-[hsl(var(--ccd-cyan))]">Arquiteto de Negócios</span> que tem liberdade de tempo, dinheiro e vida.
+          </p>
+
           <div className="grid md:grid-cols-2 gap-8 text-left max-w-3xl mx-auto">
             <div className="space-y-3 text-muted-foreground">
-              <p className="font-semibold text-foreground mb-4">Caminho 1: Não fazer nada</p>
+              <p className="font-semibold text-[hsl(var(--ccd-red))] mb-4">Caminho 1: Não fazer nada</p>
               <p>→ Continuar trabalhando 14h/dia</p>
-              <p>→ Cobrar R$ 500 e ouvir que é caro</p>
-              <p>→ Ser substituído por IA em 3 anos</p>
-              <p>→ Perder o trem da transformação</p>
+              <p>→ Brigar por preço todos os dias</p>
+              <p>→ Perder clientes para quem cobra barato</p>
+              <p>→ Ficar preso no operacional para sempre</p>
             </div>
             <div className="space-y-3">
               <p className="font-semibold text-[hsl(var(--ccd-cyan))] mb-4">Caminho 2: Entrar no CCD</p>
-              <p className="text-foreground">→ Faturar 12x mais em meses</p>
+              <p className="text-foreground">→ Faturar até 12x mais</p>
               <p className="text-foreground">→ Trabalhar menos com mais lucro</p>
-              <p className="text-foreground">→ Ser tratado como consultor</p>
-              <p className="text-foreground">→ Construir liberdade real</p>
+              <p className="text-foreground">→ Ser tratado como consultor estratégico</p>
+              <p className="text-foreground">→ Construir liberdade real de vida</p>
             </div>
+          </div>
+
+          <div className="space-y-4">
+            <p className="text-2xl font-black text-foreground">Qual você escolhe?</p>
+            <p className="text-lg text-muted-foreground italic">
+              Clique no botão. Eu te espero do outro lado, na mesa dos campeões.
+            </p>
           </div>
 
           <a
             href="#oferta"
             className="inline-flex items-center justify-center px-12 py-5 text-xl font-black rounded-xl bg-gradient-to-r from-[hsl(var(--ccd-cyan))] to-[hsl(var(--ccd-purple))] text-[hsl(var(--ccd-dark))] hover:brightness-110 transition-all animate-pulse-glow"
           >
-            QUERO ENTRAR NO CCD AGORA →
+            QUERO ENTRAR PARA A ELITE CONTÁBIL AGORA →
           </a>
 
           <p className="text-muted-foreground text-sm">
-            © {new Date().getFullYear()} CCD - Comunidade de Contadores Digitais por Anderson Maisse. Todos os direitos reservados.
+            © {new Date().getFullYear()} Comunidade de Contadores Digitais. Todos os direitos reservados.
           </p>
         </div>
       </div>

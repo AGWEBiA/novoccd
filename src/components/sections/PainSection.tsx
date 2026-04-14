@@ -17,17 +17,20 @@ const PainSection = () => {
         <div className="flex flex-col lg:flex-row items-center gap-16">
           <div className={`lg:w-1/2 space-y-8 ${isVisible ? "animate-fade-in-left" : "opacity-0"}`}>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-black leading-tight">
-              Você <span className="text-gradient-warm">trabalha 14h por dia</span> e ainda
-              ouve que contabilidade é{" "}
-              <span className="text-[hsl(var(--ccd-red))]">"commodity"</span>?
+              Você Está Cansado de Ser{" "}
+              <span className="text-gradient-warm">Invisível</span>?
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed max-w-lg">
-              Você estudou anos, passou em provas difíceis, carrega responsabilidades enormes...
-              e o mercado te trata como um <strong className="text-foreground">mal necessário</strong>.
+              Você estudou anos para isso. Passou no CRC. Abriu seu escritório com sonhos de liberdade financeira e tempo com a família. Mas a realidade foi diferente.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed max-w-lg">
-              Enquanto isso, "gurus" sem CRC vendem consultoria por <span className="text-[hsl(var(--ccd-cyan))] font-semibold">R$ 5.000/mês</span> usando
-              o conhecimento que <strong className="text-foreground">você já tem</strong>.
+              Você virou um <strong className="text-foreground">funcionário mal pago da sua própria empresa</strong>. Trabalha mais que qualquer gerente de banco, ganha menos que muitos deles e, pior: ninguém valoriza seu trabalho.
+            </p>
+            <p className="text-lg text-muted-foreground leading-relaxed max-w-lg">
+              O cliente só te liga para reclamar de imposto ou pedir desconto. O governo muda uma regra e você corre atrás. Você é o primeiro a chegar e o último a sair. Não vê seus filhos crescerem.
+            </p>
+            <p className="text-xl font-bold text-[hsl(var(--ccd-cyan))]">
+              Você não é ruim em contabilidade. Você está jogando o jogo errado.
             </p>
           </div>
 
@@ -35,7 +38,7 @@ const PainSection = () => {
             {painPoints.map((item, i) => (
               <div
                 key={item.label}
-                className={`bg-gradient-card rounded-2xl p-6 border border-[hsl(var(--ccd-red)/0.2)] hover:border-[hsl(var(--ccd-red)/0.5)] transition-all duration-300 stagger-${i + 1}`}
+                className={`bg-gradient-card rounded-2xl p-6 border border-[hsl(var(--ccd-red)/0.2)] hover:border-[hsl(var(--ccd-red)/0.5)] transition-all duration-300`}
                 style={{ animationDelay: `${i * 0.1}s` }}
               >
                 <item.icon className="w-8 h-8 text-[hsl(var(--ccd-red))] mb-3" />
