@@ -45,7 +45,7 @@ const OfferSection = () => {
 
             <div className="bg-[hsl(var(--ccd-cyan)/0.05)] rounded-xl p-4 border border-[hsl(var(--ccd-cyan)/0.1)]">
               <p className="text-sm text-muted-foreground leading-relaxed">
-                Isso dá menos de <strong className="text-foreground">R$ 160 por mês</strong>. Um único cliente High Ticket que você fechar usando nossos scripts já paga sua assinatura de um ano inteiro. O resto é{" "}
+                Isso dá menos de <strong className="text-foreground">R$ 190 por mês</strong>. Um único cliente High Ticket que você fechar usando nossos scripts já paga sua assinatura de um ano inteiro. O resto é{" "}
                 <span className="text-[hsl(var(--ccd-cyan))] font-semibold">puro lucro</span>. ROI de{" "}
                 <span className="text-[hsl(var(--ccd-cyan))] font-bold">427%</span> com apenas 2 clientes por ano.
               </p>
