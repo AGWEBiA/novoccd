@@ -177,3 +177,36 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* Tech grid background */
+.bg-tech-grid {
+  background-image:
+    linear-gradient(hsl(187 100% 50% / 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, hsl(187 100% 50% / 0.03) 1px, transparent 1px),
+    linear-gradient(hsl(187 100% 50% / 0.015) 1px, transparent 1px),
+    linear-gradient(90deg, hsl(187 100% 50% / 0.015) 1px, transparent 1px);
+  background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+}
+
+.bg-tech-lines::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 60px,
+      hsl(187 100% 50% / 0.02) 60px,
+      hsl(187 100% 50% / 0.02) 61px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 60px,
+      hsl(187 100% 50% / 0.02) 60px,
+      hsl(187 100% 50% / 0.02) 61px
+    );
+  pointer-events: none;
+  z-index: 0;
+}

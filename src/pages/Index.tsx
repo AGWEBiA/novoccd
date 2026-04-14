@@ -15,7 +15,7 @@ import FinalCTASection from "@/components/sections/FinalCTASection";
 
 const Index = () => {
   return (
-    <main className="overflow-hidden">
+    <main className="overflow-hidden relative bg-tech-grid">
       <HeroSection />
       <PainSection />
       <IdentificationSection />
