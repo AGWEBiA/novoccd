@@ -19,13 +19,13 @@ const HeroSection = () => {
               </span>
             </div>
 
-            <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black leading-[0.9] tracking-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-black leading-[0.95] tracking-tight">
               <span className="text-foreground">A Contabilidade</span>
               <br />
               <span className="text-foreground">Tradicional </span>
               <span className="text-gradient-warm">Morreu.</span>
               <br />
-              <span className="text-muted-foreground text-3xl md:text-4xl lg:text-5xl">Você Ainda Está Enterrado Nela?</span>
+              <span className="text-muted-foreground text-2xl md:text-3xl lg:text-4xl">Você Ainda Está Enterrado Nela?</span>
             </h1>
 
             <p className="text-xl md:text-2xl text-muted-foreground max-w-xl leading-relaxed">
