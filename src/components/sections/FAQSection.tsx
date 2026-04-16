@@ -33,7 +33,7 @@ const FAQSection = () => {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
-    <section ref={ref} className="relative py-14 md:py-20 bg-[hsl(0_0%_2%)]">
+    <section ref={ref} className="relative py-10 md:py-14 bg-[hsl(0_0%_2%)]">
       <div className="container mx-auto px-6">
         <div className={`max-w-3xl mx-auto ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}>
           <h2 className="text-4xl md:text-5xl font-black text-center mb-12">
