@@ -17,7 +17,7 @@ const ShiftSection = () => {
 
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-black leading-tight">
             O Contador Que{" "}
-            <span className="text-gradient-cyan">Fatura 12x Mais</span>
+            <span className="text-gradient-cyan">Fatura 8x Mais</span>
             <br />
             Não É Mais Inteligente. Ele Apenas{" "}
             <span className="text-gradient-warm">Mudou o Jogo.</span>

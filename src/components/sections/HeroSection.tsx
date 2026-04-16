@@ -30,11 +30,11 @@ const HeroSection = () => {
 
             <p className="text-xl md:text-2xl text-muted-foreground max-w-xl leading-relaxed">
               Enquanto a maioria dos contadores briga por preço e trabalha 14 horas por dia, um grupo seleto está faturando até{" "}
-              <span className="text-[hsl(var(--ccd-cyan))] font-semibold">12x mais</span>, trabalhando menos e sendo tratado como verdadeiros consultores.
+              <span className="text-[hsl(var(--ccd-cyan))] font-semibold">8x mais</span>, trabalhando menos e sendo tratado como verdadeiros consultores.
             </p>
 
             <p className="text-lg text-[hsl(var(--ccd-cyan))] font-semibold">
-              Descubra a ferramenta de aceleração que gerou mais de R$ 14 milhões em faturamento extra para nossos membros em apenas 12 meses.
+              São mais de R$ 15.000.000 milhões de reais de resultados gerados por membros do CCD.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -62,13 +62,13 @@ const HeroSection = () => {
               <div className="animate-float">
                 <div className="relative bg-gradient-card rounded-3xl p-8 border border-[hsl(var(--ccd-cyan)/0.2)] glow-cyan">
                   <div className="text-center space-y-4">
-                    <div className="text-7xl md:text-8xl font-black text-gradient-cyan">12x</div>
-                    <div className="text-xl text-foreground font-semibold">mais faturamento</div>
+                    <div className="text-7xl md:text-8xl font-black text-gradient-cyan">8x</div>
+                    <div className="text-base text-foreground font-semibold px-2">Mais faturamento é a média dos contadores que fazem parte do CCD</div>
                     <div className="h-px bg-gradient-to-r from-transparent via-[hsl(var(--ccd-cyan)/0.5)] to-transparent" />
                     <div className="text-4xl md:text-5xl font-bold text-[hsl(var(--ccd-cyan))]">
-                      R$ 14.192.750
+                      R$ 15.000.000+
                     </div>
-                    <div className="text-muted-foreground">gerados pelos membros em 2024</div>
+                    <div className="text-muted-foreground">em resultados gerados por membros do CCD</div>
                   </div>
                 </div>
               </div>

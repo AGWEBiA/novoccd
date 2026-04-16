@@ -36,7 +36,7 @@ const FinalCTASection = () => {
             </div>
             <div className="space-y-3">
               <p className="font-semibold text-[hsl(var(--ccd-cyan))] mb-4">Caminho 2: Entrar no CCD</p>
-              <p className="text-foreground">→ Faturar até 12x mais</p>
+              <p className="text-foreground">→ Faturar até 8x mais</p>
               <p className="text-foreground">→ Trabalhar menos com mais lucro</p>
               <p className="text-foreground">→ Ser tratado como consultor estratégico</p>
               <p className="text-foreground">→ Construir liberdade real de vida</p>

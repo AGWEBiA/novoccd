@@ -12,7 +12,7 @@ const testimonials = [
 
 const SocialProofSection = () => {
   const { ref, isVisible } = useScrollAnimation();
-  const revenue = useCountUp(14192750, 2500, 0, isVisible);
+  const revenue = useCountUp(15000000, 2500, 0, isVisible);
 
   return (
     <section ref={ref} className="relative py-10 md:py-14 bg-[hsl(0_0%_2%)]">
@@ -25,10 +25,10 @@ const SocialProofSection = () => {
 
         <div className={`text-center mb-6 ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}>
           <div className="text-6xl md:text-7xl lg:text-[120px] font-black text-[hsl(var(--ccd-cyan))] leading-none" style={{ textShadow: "0 0 60px hsl(187 100% 50% / 0.3)" }}>
-            R$ {revenue.toLocaleString("pt-BR")}
+            R$ {revenue.toLocaleString("pt-BR")}+
           </div>
           <p className="text-xl md:text-2xl text-muted-foreground mt-4">
-            em faturamento extra
+            em resultados gerados por membros do CCD
           </p>
         </div>
 
