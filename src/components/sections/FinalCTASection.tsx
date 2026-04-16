@@ -4,7 +4,7 @@ const FinalCTASection = () => {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
-    <section ref={ref} className="relative py-14 md:py-20 bg-gradient-dark overflow-hidden">
+    <section ref={ref} className="relative py-10 md:py-14 bg-gradient-dark overflow-hidden">
       <div className="absolute inset-0">
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[1000px] h-[400px] bg-[hsl(187_100%_50%/0.05)] blur-[150px] rounded-full" />
       </div>

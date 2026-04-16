@@ -10,7 +10,7 @@ const HeroSection = () => {
         <div className="absolute bottom-1/4 -left-20 w-[400px] h-[400px] rounded-full bg-[hsl(270_70%_55%/0.05)] blur-[100px]" />
       </div>
 
-      <div className="container mx-auto px-6 py-20 relative z-10">
+      <div className="container mx-auto px-6 py-12 relative z-10">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
           <div className={`lg:w-[60%] space-y-8 ${isVisible ? "animate-fade-in-left" : "opacity-0"}`}>
             <div className="inline-block px-4 py-2 rounded-full border border-[hsl(var(--ccd-cyan)/0.3)] bg-[hsl(var(--ccd-cyan)/0.05)]">

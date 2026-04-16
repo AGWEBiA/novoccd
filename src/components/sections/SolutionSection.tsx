@@ -47,7 +47,7 @@ const SolutionSection = () => {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
-    <section ref={ref} className="relative py-14 md:py-20 bg-[hsl(0_0%_2%)]">
+    <section ref={ref} className="relative py-10 md:py-14 bg-[hsl(0_0%_2%)]">
       <div className="container mx-auto px-6">
         <div className={`text-center max-w-4xl mx-auto mb-16 ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}>
           <span className="inline-block px-4 py-2 rounded-full border border-[hsl(var(--ccd-cyan)/0.3)] bg-[hsl(var(--ccd-cyan)/0.05)] text-[hsl(var(--ccd-cyan))] text-sm font-semibold tracking-widest uppercase mb-6">
