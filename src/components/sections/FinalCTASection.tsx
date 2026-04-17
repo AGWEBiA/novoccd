@@ -11,7 +11,7 @@ const FinalCTASection = () => {
 
       <div className="container mx-auto px-6 relative z-10">
         <div className={`max-w-4xl mx-auto text-center space-y-10 ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}>
-          <h2 className="text-4xl md:text-5xl lg:text-7xl font-black leading-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black leading-tight">
             A Escolha é Sua.
             <br />
             <span className="text-gradient-cyan">E É Agora.</span>
@@ -52,7 +52,7 @@ const FinalCTASection = () => {
 
           <a
             href="#oferta"
-            className="inline-flex items-center justify-center px-12 py-5 text-xl font-black rounded-xl bg-gradient-to-r from-[hsl(var(--ccd-cyan))] to-[hsl(var(--ccd-purple))] text-[hsl(var(--ccd-dark))] hover:brightness-110 transition-all animate-pulse-glow"
+            className="inline-flex items-center justify-center w-full sm:w-auto px-6 sm:px-12 py-4 sm:py-5 text-base sm:text-xl font-black rounded-xl bg-gradient-to-r from-[hsl(var(--ccd-cyan))] to-[hsl(var(--ccd-purple))] text-[hsl(var(--ccd-dark))] hover:brightness-110 transition-all animate-pulse-glow text-center leading-tight"
           >
             QUERO ENTRAR PARA A ELITE CONTÁBIL AGORA →
           </a>
