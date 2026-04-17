@@ -6,6 +6,7 @@ import SolutionSection from "@/components/sections/SolutionSection";
 import PillarsSection from "@/components/sections/PillarsSection";
 import SocialProofSection from "@/components/sections/SocialProofSection";
 import MentorSection from "@/components/sections/MentorSection";
+import VideoTestimonialsSection from "@/components/sections/VideoTestimonialsSection";
 import ValueStackSection from "@/components/sections/ValueStackSection";
 import PriceAnchorSection from "@/components/sections/PriceAnchorSection";
 import OfferSection from "@/components/sections/OfferSection";
@@ -26,6 +27,7 @@ const Index = () => {
       <PillarsSection />
       <SocialProofSection />
       <MentorSection />
+      <VideoTestimonialsSection />
       <ValueStackSection />
       <PriceAnchorSection />
       <OfferSection />
