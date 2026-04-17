@@ -53,13 +53,6 @@ const SocialProofSection = () => {
           ))}
         </div>
 
-        <div className={`text-center mb-10 ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}>
-          <p className="text-xl font-bold text-foreground">
-            Eles não são mais inteligentes que você. Eles apenas tiveram acesso ao{" "}
-            <span className="text-[hsl(var(--ccd-cyan))]">método certo</span> no momento certo.
-          </p>
-        </div>
-
         <div className={`grid md:grid-cols-3 lg:grid-cols-5 gap-4 max-w-6xl mx-auto ${isVisible ? "animate-fade-in-up stagger-3" : "opacity-0"}`}>
           {testimonials.map((t) => (
             <div key={t.name} className="bg-gradient-card rounded-2xl p-5 border border-border">
