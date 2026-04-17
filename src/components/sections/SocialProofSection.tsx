@@ -2,14 +2,6 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { useCountUp } from "@/hooks/useCountUp";
 import { Star, Users, CheckCircle, MessageCircle } from "lucide-react";
 
-const testimonials = [
-  { name: "João", role: "Escritório Contábil", text: "Saí de R$ 5.000 para R$ 50.000 de faturamento mensal em 6 meses. O CCD mudou completamente meu negócio." },
-  { name: "Maria", role: "Contadora Consultiva", text: "Demiti 30% dos meus clientes 'sanguessugas' e aumentei o faturamento em 40%. Trabalho menos e ganho mais." },
-  { name: "Pedro", role: "Escritório Digital", text: "Estruturei uma equipe e saí do operacional em 4 meses. Agora foco no estratégico e meu negócio cresce sozinho." },
-  { name: "Ana", role: "Contadora - SP", text: "Dominei 3 nichos diferentes e triplicei meus clientes. O networking na comunidade é incrível." },
-  { name: "Lucas", role: "Contador Digital - MG", text: "Implementei automações e ganhei 20 horas por semana. Minha qualidade de vida mudou completamente." },
-];
-
 const SocialProofSection = () => {
   const { ref, isVisible } = useScrollAnimation();
   const revenue = useCountUp(15000000, 2500, 0, isVisible);
@@ -53,22 +45,6 @@ const SocialProofSection = () => {
           ))}
         </div>
 
-        <div className={`grid md:grid-cols-3 lg:grid-cols-5 gap-4 max-w-6xl mx-auto ${isVisible ? "animate-fade-in-up stagger-3" : "opacity-0"}`}>
-          {testimonials.map((t) => (
-            <div key={t.name} className="bg-gradient-card rounded-2xl p-5 border border-border">
-              <div className="flex gap-1 mb-3">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-3 h-3 fill-[hsl(var(--ccd-cyan))] text-[hsl(var(--ccd-cyan))]" />
-                ))}
-              </div>
-              <p className="text-muted-foreground mb-3 italic text-sm leading-relaxed">"{t.text}"</p>
-              <div>
-                <div className="font-semibold text-foreground text-sm">{t.name}</div>
-                <div className="text-xs text-muted-foreground">{t.role}</div>
-              </div>
-            </div>
-          ))}
-        </div>
       </div>
     </section>
   );
