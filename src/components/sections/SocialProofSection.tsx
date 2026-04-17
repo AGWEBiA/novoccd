@@ -53,22 +53,6 @@ const SocialProofSection = () => {
           ))}
         </div>
 
-        <div className={`grid md:grid-cols-3 lg:grid-cols-5 gap-4 max-w-6xl mx-auto ${isVisible ? "animate-fade-in-up stagger-3" : "opacity-0"}`}>
-          {testimonials.map((t) => (
-            <div key={t.name} className="bg-gradient-card rounded-2xl p-5 border border-border">
-              <div className="flex gap-1 mb-3">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-3 h-3 fill-[hsl(var(--ccd-cyan))] text-[hsl(var(--ccd-cyan))]" />
-                ))}
-              </div>
-              <p className="text-muted-foreground mb-3 italic text-sm leading-relaxed">"{t.text}"</p>
-              <div>
-                <div className="font-semibold text-foreground text-sm">{t.name}</div>
-                <div className="text-xs text-muted-foreground">{t.role}</div>
-              </div>
-            </div>
-          ))}
-        </div>
       </div>
     </section>
   );
