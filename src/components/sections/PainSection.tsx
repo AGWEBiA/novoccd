@@ -14,7 +14,7 @@ const PainSection = () => {
   return (
     <section ref={ref} className="relative py-10 md:py-14 bg-[hsl(0_0%_2%)]">
       <div className="container mx-auto px-6">
-        <div className="flex flex-col lg:flex-row items-center gap-16">
+        <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
           <div className={`lg:w-1/2 space-y-8 ${isVisible ? "animate-fade-in-left" : "opacity-0"}`}>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-black leading-tight">
               Você Está Cansado de Ser{" "}
@@ -34,11 +34,11 @@ const PainSection = () => {
             </p>
           </div>
 
-          <div className={`lg:w-1/2 grid grid-cols-2 gap-6 ${isVisible ? "animate-fade-in-right" : "opacity-0"}`}>
+          <div className={`w-full lg:w-1/2 grid grid-cols-2 gap-3 sm:gap-6 ${isVisible ? "animate-fade-in-right" : "opacity-0"}`}>
             {painPoints.map((item, i) => (
               <div
                 key={item.label}
-                className={`bg-gradient-card rounded-2xl p-6 border border-[hsl(var(--ccd-red)/0.2)] hover:border-[hsl(var(--ccd-red)/0.5)] transition-all duration-300`}
+                className={`bg-gradient-card rounded-2xl p-4 sm:p-6 border border-[hsl(var(--ccd-red)/0.2)] hover:border-[hsl(var(--ccd-red)/0.5)] transition-all duration-300`}
                 style={{ animationDelay: `${i * 0.1}s` }}
               >
                 <item.icon className="w-8 h-8 text-[hsl(var(--ccd-red))] mb-3" />

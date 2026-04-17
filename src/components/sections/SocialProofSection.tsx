@@ -24,7 +24,7 @@ const SocialProofSection = () => {
         </div>
 
         <div className={`text-center mb-6 ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}>
-          <div className="text-6xl md:text-7xl lg:text-[120px] font-black text-[hsl(var(--ccd-cyan))] leading-none" style={{ textShadow: "0 0 60px hsl(187 100% 50% / 0.3)" }}>
+          <div className="text-5xl sm:text-6xl md:text-7xl lg:text-[120px] font-black text-[hsl(var(--ccd-cyan))] leading-none break-words" style={{ textShadow: "0 0 60px hsl(187 100% 50% / 0.3)" }}>
             R$ {revenue.toLocaleString("pt-BR")}+
           </div>
           <p className="text-xl md:text-2xl text-muted-foreground mt-4">

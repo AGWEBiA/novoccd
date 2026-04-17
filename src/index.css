@@ -226,3 +226,34 @@ html {
   position: relative;
   z-index: 2;
 }
+
+/* Mobile global polish: prevent horizontal overflow & long-word breaks */
+html, body {
+  overflow-x: hidden;
+}
+
+@media (max-width: 640px) {
+  /* Tighter container padding on small screens */
+  .bg-tech-grid > section .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  /* Reduce extreme heading sizes that cause overflow */
+  .bg-tech-grid h1,
+  .bg-tech-grid h2,
+  .bg-tech-grid h3 {
+    word-break: break-word;
+    hyphens: auto;
+  }
+
+  /* Soften overly large cards padding */
+  .bg-tech-grid .rounded-3xl.p-8 {
+    padding: 1.25rem;
+  }
+
+  /* Soften large grid gaps */
+  .bg-tech-grid section .gap-16 { gap: 2rem; }
+  .bg-tech-grid section .mt-16 { margin-top: 2.5rem; }
+}
+
