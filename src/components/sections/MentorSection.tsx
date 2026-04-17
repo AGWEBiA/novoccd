@@ -1,5 +1,5 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import andersonImg from "@/assets/anderson-maisse.jpg";
+import andersonImg from "@/assets/anderson-maisse.webp";
 
 const MentorSection = () => {
   const { ref, isVisible } = useScrollAnimation();
