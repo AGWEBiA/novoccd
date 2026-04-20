@@ -1,5 +1,5 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { Target, TrendingUp, Settings, Globe } from "lucide-react";
+import { Target, TrendingUp, Settings, Globe, Brain } from "lucide-react";
 
 const pillars = [
   {
@@ -57,6 +57,20 @@ const pillars = [
     result: "Faturamento infinito. Negócio que cresce sozinho.",
     color: "var(--ccd-cyan)",
   },
+  {
+    icon: Brain,
+    title: "Inteligência Artificial",
+    subtitle: "De Trabalho Manual para Automação Inteligente",
+    desc: "IA não substitui o contador. IA potencializa o contador. Automatize tarefas repetitivas, entregue análises avançadas e atenda mais clientes com a mesma equipe.",
+    items: [
+      "Agentes de IA para classificação e conciliação automática",
+      "Sistemas de IA para análise fiscal e tributária em segundos",
+      "Automação de relatórios gerenciais personalizados",
+      "Chatbots inteligentes para atendimento ao cliente 24/7",
+    ],
+    result: "Mais produtividade. Menos trabalho operacional. Clientes mais satisfeitos.",
+    color: "var(--ccd-purple)",
+  },
 ];
 
 const PillarsSection = () => {
@@ -70,7 +84,7 @@ const PillarsSection = () => {
             SUA JORNADA DE TRANSFORMAÇÃO
           </span>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-black leading-tight">
-            Os 4 Pilares da{" "}
+            Os 5 Pilares da{" "}
             <span className="text-gradient-cyan">Aceleração</span>
           </h2>
         </div>
