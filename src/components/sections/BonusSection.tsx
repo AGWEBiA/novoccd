@@ -1,5 +1,5 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { Search, FileText, MessageSquare } from "lucide-react";
+import { Search, FileText, MessageSquare, Bot } from "lucide-react";
 
 const bonuses = [
   {
@@ -20,6 +20,12 @@ const bonuses = [
     desc: "Acesso ao grupo exclusivo onde os contadores mais avançados trocam estratégias e resolvem problemas em tempo real.",
     value: "R$ 1.000",
   },
+  {
+    icon: Bot,
+    title: "Agentes e Sistemas de IA",
+    desc: "Durante toda a vigência da sua assinatura no CCD, você recebe acesso a agentes de IA proprietários e sistemas automatizados para otimizar processos contábeis, acelerar resultados e entregar melhores serviços aos seus clientes.",
+    value: "R$ 3.000",
+  },
 ];
 
 const BonusSection = () => {
@@ -34,11 +40,11 @@ const BonusSection = () => {
             <span className="text-gradient-cyan">Tem Mais.</span>
           </h2>
           <p className="text-xl text-muted-foreground mt-4 max-w-2xl mx-auto">
-            Para quem entrar AGORA, você recebe 3 bônus exclusivos que desaparecem assim que a oferta fecha:
+            Para quem entrar AGORA, você recebe 4 bônus exclusivos que desaparecem assim que a oferta fecha:
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
           {bonuses.map((bonus, i) => (
             <div
               key={bonus.title}
@@ -59,7 +65,7 @@ const BonusSection = () => {
 
         <div className={`text-center mt-10 ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}>
           <div className="inline-block px-6 py-3 rounded-full border border-[hsl(var(--ccd-orange)/0.3)] bg-[hsl(var(--ccd-orange)/0.05)]">
-            <span className="text-[hsl(var(--ccd-orange))] font-bold text-xl">Total em Bônus: R$ 4.500</span>
+            <span className="text-[hsl(var(--ccd-orange))] font-bold text-xl">Total em Bônus: R$ 7.500</span>
           </div>
           <p className="text-muted-foreground mt-4 text-sm">
             Esses bônus desaparecem assim que a oferta fecha. Essa oportunidade é limitada.
